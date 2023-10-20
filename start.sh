@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/AakashMiracle/miracle-auto-filter.git /Auto-search-tamil-bot
+  git clone https://github.com/AakashMiracle/miracle-auto-filter.git /DQTheFileDonorBot
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Auto-search-tamil-bot
+  git clone $UPSTREAM_REPO /DQTheFileDonorBot
 fi
-cd /Auto-search-tamil-bot
+cd /DQTheFileDonorBot
 pip3 install -U -r requirements.txt
-echo "Starting Bot...."
+echo "Starting DQ-The-File-Donor...."
 python3 bot.py
